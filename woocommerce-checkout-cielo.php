@@ -5,7 +5,7 @@
  * Description: Checkout Cielo payment gateway for WooCommerce.
  * Author: Claudio Sanches, Gabriel Reguly
  * Author URI: http://claudiosmweb.com/
- * Version: 1.0.2
+ * Version: 1.0.3
  * License: GPLv2 or later
  * Text Domain: woocommerce-checkout-cielo
  * Domain Path: languages/
@@ -27,7 +27,7 @@ class WC_Checkout_Cielo {
 	 *
 	 * @var string
 	 */
-	const VERSION = '1.0.2';
+	const VERSION = '1.0.3';
 
 	/**
 	 * Instance of this class.
@@ -102,15 +102,6 @@ class WC_Checkout_Cielo {
 	 */
 	public function dependencies_notices() {
 		include_once 'includes/views/html-notice-woocommerce-missing.php';
-	}
-
-	/**
-	 * Get the settings URL.
-	 *
-	 * @return string
-	 */
-	public static function get_settings_url() {
-		return admin_url( 'admin.php?page=wc-settings&tab=checkout&section=wc_checkout_cielo_gateway' );
 	}
 
 	/**
